@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>She Can Foundation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Dark Mode Button -->
+    <button id="theme-btn">🌙 Dark Mode</button>
+
+    <!-- Header -->
+    <header>
+
+        <div class="logo-section">
+            <img src="logo.png.avif"
+             alt="She Can Foundation Logo"
+             class="logo">
+
+            <h2>She Can Foundation</h2>
+        </div>
+
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="content">
+
+            <h1>Empowering Women, Transforming Lives</h1>
+
+            <p>
+                Together we can create opportunities,
+                equality, leadership, and a brighter future
+                for women across communities.
+            </p>
+
+            <a href="https://shecanfoundation.org/"
+               target="_blank"
+               class="btn">
+                Visit Official Website
+            </a>
+
+        </div>
+
+        <div class="image-box">
+
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900"
+                 alt="Women Empowerment">
+
+        </div>
+
+    </section>
+
+    <section class="about">
+
+        <h2>About Us</h2>
+
+        <p>
+            She Can Foundation is a non-profit organization
+            dedicated to empowering women and building a more
+            equitable society through education, skill
+            development, leadership programs, awareness
+            campaigns, and community support initiatives.
+        </p>
+
+    </section>
+    
+    <footer>
+
+        <p>
+            © 2026 She Can Foundation |
+            Empowering Women Every Day
+        </p>
+
+    </footer>
+
+    <script>
+
+        const btn = document.getElementById("theme-btn");
+
+        btn.addEventListener("click", () => {
+
+            document.body.classList.toggle("dark");
+
+            if(document.body.classList.contains("dark")){
+                btn.innerHTML = "☀️ Light Mode";
+            }
+            else{
+                btn.innerHTML = "🌙 Dark Mode";
+            }
+
+        });
+
+    </script>
+
+</body>
+</html>
